@@ -12,9 +12,14 @@ Modules
 Выбрать папку src
 Нажать на кнопку Sources в строке с "Mark as:"
 Apply
+
 alt + f
 Build
 Build Project
+
+alt + f
+Project Structure...
+Language level: SDK Default
 ```
 
 ## компилировать тогда нужно будет так:
