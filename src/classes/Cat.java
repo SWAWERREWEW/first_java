@@ -1,0 +1,7 @@
+package classes;
+
+public class Cat extends Animal {
+@Override public void eat(){System.out.println("Cat is eating");}
+public void meow(){System.out.println("Meow!");}
+public String favorite_food;
+}

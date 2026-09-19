@@ -1,6 +1,3 @@
-# Изучаемый курс
-https://youtu.be/Z6RGsOTYxEU?si=c-UcWhcpKfSBKboW
-
 # Для запуска нужно
 ```
 Создать в корне репозитория папку out
@@ -28,7 +25,13 @@ javac com/company/Main.java
 ## А запускать так:
 java com/company/Main
 
+## Создание пакета
+src → правая кнопка мыши → New → Package
+
 # Прочее
+    Видео, которое помогло клонировать и запустить
+    https://youtu.be/ByUv_kgCiEI?si=UUrotdBQ6UewP4mn
+
     git rm --cached .idea/misc.xml
     git rm --cached sitewomen\db.json
 

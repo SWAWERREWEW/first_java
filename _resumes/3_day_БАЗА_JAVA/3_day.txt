@@ -1,0 +1,134 @@
+3 day = ВСЯ БАЗА JAVA ЗА 90 МИНУТ
+https://youtu.be/rFq7RtSiVbE?si=krt_GBXFrR-N0C98
+
+В языке нет ограничений по отступам
+
+class pri{public static void nt(String s){System.out.println(s);}
+public static void nmber(float n){System.out.println(n);}}
+
+                  int крит_урон = 145;    int крит_шанс = 76;
+int крит_масса =      крит_урон         +     крит_шанс       * 2; pri.nmber(крит_масса);
+
+float числитель   =     (9 + 9) * 3 + 1;
+//                     -----------------
+float знаминатель =       (5 + 4) * 6;
+pri.nmber(числитель / знаминатель);
+
+Типы данных: String a = "dfdfd eef", int, float, byte, short, long name = 34343434L, boolean a = true,
+double lol = 22.222222222, char = 'f',
+Если определить переменную
+int some_number;
+то оно по умолчанию будет равно null, а в данном случае 0, если число
+
+do {действия цикла (будет выполнено хотя бы один раз)} while (условие действий цикла)
+
+Как создать список?
+int[] набор_чисел = (new int[3])[0] = 1;
+
+Модификаторы
+public = видимый везде класс и к нему можно обратиться откуда угодно
+default = видимый в пределах пакета или папки
+private = видимый в пределах класса (по сути одного файла) и получаемый только через отдельную функцию
+protected = в своем пакете и во всех классах-наследниках
+
+static =
+void = отсутствие возвращаемого значения
+
+public class Absiration{
+private int is_private;
+public int is_public;
+int is_default;
+protected int is_protected;
+}
+
+Вместо доступа через пакет
+russian.Hello.main()
+можно сделать доступ через импортацию
+import russian.Hello
+Hello.main()
+
+Переменная стала константой
+public final String wheels = "просто колёса";
+
+// изменение публичного параметра для отдельного объекта
+car.wheels_is_public = "колёса убраны";
+pri.nt(car.wheels_is_public);
+// на класс в целом это не повлияет и можно создать новый объект класса с прежними значениями
+pri.nt("Новая машина");
+чертёж_машины new_car = new чертёж_машины();
+pri.nt(new_car.wheels_is_public);
+}}
+
+Подобие параметра self из Python это this
+
+Python
+class Some:
+    def __init__(self, some_variable):
+        self.__some_variable = some_variable
+
+    @staticmethod
+    def some_function(some_parameter):
+        self.__some_variable = some_parameter
+
+Java
+class Some{
+    private String some_variable;
+    public void some_function(some_parameter){
+        this.some_variable = some_parameter
+    }
+}
+
+Можно создать функцию с несколькими аргументами
+public int summ(int a, int b){return a + b;}
+
+переопределение существуюищих функций с одинаковыми типами аргументов запрещено
+переопределить функцию нельзя
+
+Но можно расширить функцию для принятия различными типами данных
+public int summ(int a, int b){return a + b;}
+public double summ(double a, double b){return a + b;}
+Одинаковое название, но технически разные функции
+
+Основа или абстрактный класс (Две схожии реализации)
+public interface Animal{}
+public abstract class Animal{}
+
+Абстрактный метод создан для переопределения в классах наследниках
+public abstract class Animal{
+public abstract void eat();
+public int age;
+}
+public interface Animal{
+void eat();
+int age;
+}
+
+Базовое наследование
+public class Cat extends Animal{}
+
+Полное наследование с переопределением методов родительского класса
+Где @Override = переопределение
+// public class Cat implements Animal{ при interface
+public class Cat extends Animal{
+@Override public void eat(){System.out.println("Cat is eating");}
+public void meow(){System.out.println("Meow!");}
+public String favorite_food;
+}
+
+Создание объекта дочернего класса с помощью наследования без нового метода meow
+Animal cat_Tom = Cat();
+Создание объекта дочернего класса с помощью полиморфизма с новым методом meow
+Cat cat_Tom = Cat();
+
+Пример
+Cat cat_Tom = Cat();
+cat_Tom.age = 4;
+cat_Tom.favorite_food = "fish";
+cat_Tom.eat();
+cat_Tom.meow();
+
+Для каждого класса public должен быть отдельный файл .java
+
+extends позволяет делать наследование только от одного класса
+interface и implements позволяет делать наследование от нескольких абстрактных классов
+public class Cat implements Animal, Animal1, ... Animaln {}
