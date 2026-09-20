@@ -5,8 +5,7 @@ Kikidon.main();
 russian.Hello.main();
 }}
 
-class pri{public static void nt(Object s){System.out.println(s);}
-public static void nmber(float n){System.out.println(n);}}
+class pri{public static void nt(Object s){System.out.println(s);}}
 
 class Kikidon {public static void main(){
 
@@ -14,27 +13,27 @@ class Kikidon {public static void main(){
 //System.out.println(lil);
 
                   int крит_урон = 145;    int крит_шанс = 76;
-int крит_масса =      крит_урон         +     крит_шанс       * 2; pri.nmber(крит_масса);
+int крит_масса =      крит_урон         +     крит_шанс       * 2; pri.nt(крит_масса);
 
-float числитель   =     (9 + 9) * 3 + 1;
-//                     -----------------
+float числитель   =     (9 + 9) * 3 + 1 + 1;
+//                     ---------------------
 float знаминатель =       (5 + 4) * 6;
-pri.nmber(числитель / знаминатель);
+pri.nt(числитель / знаминатель);
 
 if(числитель / знаминатель >= 0){pri.nt("Число больше либо равно нулю или либо равно числу");}
 else{pri.nt("А всмысле?");}
-for(int i = 0; i < 9; i = i + 2){pri.nmber(100);}
+for(int i = 0; i < 9; i = i + 2){pri.nt(100);}
 
 int i = 0; do {pri.nt("wtf"); i++;} while (i < 4);
 
 int[] набор_чисел = new int[3]; набор_чисел[0] = 2; набор_чисел[1] = 2; набор_чисел[2] = 3;
-System.out.println(набор_чисел);
-for(int ii = 0; ii < набор_чисел.length; ii++){pri.nmber(набор_чисел[ii]);}
+pri.nt(набор_чисел);
+for(int ii = 0; ii < набор_чисел.length; ii++){pri.nt(набор_чисел[ii]);}
 
 int[] lol_lil = new int[5];
-System.out.print("lol_lil "); System.out.println(lol_lil);
+System.out.print("lol_lil "); pri.nt(lol_lil);
 for(int ii = 0; ii < lol_lil.length; ii++){lol_lil[ii] = 2;}
-for(int ii = 0; ii < lol_lil.length; ii++){pri.nmber(lol_lil[ii]);}
+for(int ii = 0; ii < lol_lil.length; ii++){pri.nt(lol_lil[ii]);}
 
 чертёж_машины car = new чертёж_машины();
 pri.nt(car.is_default_stats);
@@ -57,7 +56,7 @@ classes.SomeClass math = new classes.SomeClass();
 math.functionf(6.7);
 pri.nt(math.up(9, 2));
 double[] lilx = new double[5];
-for(int ii = 0; ii < lilx.length; ii++){lilx[i] = 2.0;}
+for(int ii = 0; ii < lilx.length; ii++){lilx[ii] = 2;}
 math.functiony(lilx);
 }}
 
