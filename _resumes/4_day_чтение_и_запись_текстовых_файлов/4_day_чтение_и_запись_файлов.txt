@@ -1,0 +1,28 @@
+4 day = чтение и запись текстовых файлов
+
+https://youtu.be/FhJHRN_FJms?si=hI6Ey4_mZz0KFeTk
+
+Импортация
+import java.io.*;
+
+Функция и два аргумента с содержимым и путём с названием файла
+public static void write_file(String s, String path){
+
+Создание главной переменной writer для записи с блоком try
+try(  PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(path)))  )
+
+Внутри блока тела try использование переменной для записи аргумента с содержимым
+{writer.println(s);}
+
+Вторая часть функции try под названием catch с аргументом возможной ошибки, а в теле
+просто отображение сообщения этой ошибки
+catch (IOException e) {System.err.println(e.getMessage());} }
+
+Функция чтения файла в теле функции try просто создаёт переменную line и в неё помещает
+прочтённую строку reader.readline и каждый раз переопределяет line и выводит её
+public static void read_file(String path){
+try(  BufferedReader reader = new BufferedReader(new FileReader(path));  ){
+String line;
+while(  (line=reader.readLine())!=null  ) {pri.nt(line);}}
+catch (IOException e) {System.err.println(e.getMessage());}  }
+}

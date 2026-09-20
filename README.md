@@ -53,3 +53,5 @@ src → правая кнопка мыши → New → Package
 
     отправка на github
     git push origin main --force
+
+    ctrl + alt + l = создание отступов и выравнивание кода по требованию программистов

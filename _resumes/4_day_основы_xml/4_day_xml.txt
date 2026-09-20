@@ -1,0 +1,43 @@
+https://youtu.be/v1rIj91daaw?si=StDJWR2NQ8rDhJCo
+
+xml это расширенный язык разметки
+или язык разметки документов
+
+Можно создавать почти любые теги, но все они должны быть внутри одного главного
+<root>
+... Всё теги...
+</root>
+
+Стоит внести служебную информацию
+<? xml version="10" encoding="UTF-8" ?>
+<book title="java↑"/>
+
+Есть запреты на символы внутри тегов, но их замена
+<student>
+&lt = символ меньше
+&gt = символ больше
+&amp = символ и
+&quot = символ двойной ковычки
+</student>
+
+Два механизма проверки правильности написания
+dtd, xsd
+xsd является более актуальным
+
+dtd
+Просто описание структуры документа (поля) (#PCDATA это любые данные)
+<!element name (#PCDATA)>
+<!element telephone (#PCDATA)>
+<!element address (country, city, street)>
+<!element student (name, telephone, address)>
+
+Можно вынести dtd в отдельный файл
+<!DOCTYPE student SYSTEM "student.dtd">
+
+У тега могут быть атрибуты
+<!ATTLIST student
+login 10 #REQUIRED
+facult CDATA #REQUIRED
+или
+<student id="1">
+</student>

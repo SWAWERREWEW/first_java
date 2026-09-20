@@ -1,0 +1,27 @@
+<?xml version="10" encoding="UTF-8"?>
+<!-- Здравствуйте -->
+<root>
+
+<book title="java↑"/>
+
+<students>
+
+<student id="1">
+    <name> Чел </name>
+    <phone_number> 222445 </phone_number>
+    <country> Russia </country>
+    <city> Moscow </city>
+    <street> 24 Main street </street>
+</student>
+
+<student id="2">
+    <name id="2"> Ещё Чел </name>
+    <phone_number> 544444 </phone_number>
+    <country> Russia </country>
+    <city> Europe </city>
+    <street> 5 gaga street </street>
+</student>
+
+</students>
+
+</root>
