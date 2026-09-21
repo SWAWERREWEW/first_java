@@ -17,7 +17,7 @@ String[] lil = new String[9999999];
 int len_lil = 0;
 String line;
 try(  BufferedReader reader = new BufferedReader(new FileReader(path));  ){
-while(  (line=reader.readLine())!=null  ) {len_lil++; lil[len_lil] = line;}}
-catch (IOException e) {System.err.println(e.getMessage());}
+while(  (line=reader.readLine())!=null  ) {len_lil++; lil[len_lil] = line;}
+} catch (IOException e) {System.err.println(e.getMessage());}
 return lil;}
 }
